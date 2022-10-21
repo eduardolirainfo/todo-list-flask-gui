@@ -1,8 +1,19 @@
 {% extends 'index.html' %}
 <!--Head Block-->
 {% block head %}
-    <title>Todo List - Home</title>
+<title>Todo List - Home</title>
 {% endblock %}
 {% block body %}
-<h1> My Content</p>
+<div class="w-full flex flex-col items-center justify-center">
+    <form method="post" id="add_task"
+        class="flex items-center justify-center w-full  md:w-340 bg-card p-2 md:p-4 rounded-md shadow-md">
+        <input type="text" name="todo_input" id="todo_input" placeholder="Escreva aqui ..."
+            class="w-full h-full outline-none border-none bg-transparent text-black placeholder:text-gray-500 text-lg font-semibold">
+        <button
+            class="px-3 py-1 outline-none border-none text-white text-base font-semibold rounded-md bg-emerald-400 active:scale-75 transition-all duration-200 ease-out"
+            type="submit"> Add
+        </button>
+    </form>
+</div>
+
 {% endblock %}
