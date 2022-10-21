@@ -11,8 +11,15 @@
 </head>
 
 <body>
-    {% block body %}
-    {% endblock %}
+    <header class="w-full flex items-center shadow-md px-8 md:px-32 py-2 md:py-8">
+        <p class="text-3xl text-white font-semibold">ToDo: List
+        </p>
+    </header>
+
+    <main class="w-full flex flex-col px-8 md:px-32 py-2 md:py-8">
+        {% block body %}
+        {% endblock %}
+    </main>
 
 </body>
 
