@@ -14,6 +14,18 @@
             type="submit"> Add
         </button>
     </form>
+
+    <div class="w-full md:w-656 mt-12 p-2 rounded-md border-2 border-card">
+        <div></div>
+        <div class="w-full items-center flex justify-center flex-col">
+            <p class="text-2xl text-gray-500 font-semibol capitalize tracking-wide mb-3">
+                No tasks yet
+            </p>
+            <img src="{{url_for('static', filename='dist/img/nodata.svg')}}" alt="" class="w-225">
+
+        </div>
+
+    </div>
 </div>
 
 {% endblock %}
