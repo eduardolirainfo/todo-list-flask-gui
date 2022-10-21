@@ -1,0 +1,9 @@
+{
+  "name": "todo-list-flask-gui",
+  "version": "1.0.0",
+  "description": "todo-list-flask-gui-study-and-develop",
+  "main": "index.js",
+  "repository": "https://github.com/eduardolirainfo/todo-list-flask-gui.git",
+  "author": "eduardolirainfo <eduardolirainfo@gmail.com>",
+  "license": "MIT"
+}
