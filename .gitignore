@@ -133,3 +133,4 @@ dmypy.json
 node_modules/
 yarn-error.log
 yarn.lock
+config/serviceAccountKey.json
