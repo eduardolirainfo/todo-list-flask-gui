@@ -3,9 +3,12 @@ from firebase_admin import firestore
 import calendar
 import time
 
+import flaskwebgui
+
 app = Flask(__name__, template_folder='templates')
 app.config.from_pyfile('config/config.py')
 
+gui = flaskwebgui.FlaskUI(app=app)
 db = firestore.client()
 
 
@@ -36,7 +39,7 @@ def delete(id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
-
+    # app.run(debug=True)
+    gui.run()
 
 
